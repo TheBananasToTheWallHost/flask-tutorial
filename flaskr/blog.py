@@ -58,6 +58,12 @@ def get_post(id, check_author=True):
 
     return post
 
+@bp.route('/<int:id>/details', methods=('GET',))
+def details(id):
+    post = get_post(id, check_author=False)
+    return render_template('blog/details.html', post=post)
+
+
 @bp.route('/<int:id>/update', methods=('GET', 'POST'))
 @login_required
 def update(id):
