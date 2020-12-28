@@ -8,6 +8,21 @@ body {
   margin: 0 auto;
   background: white;
 }
+button{
+  background-color: transparent;
+  border: none;
+}
+.webfooter{
+  background: lightgray;
+}
+.webfooter > div{
+  margin: auto;
+  padding: 10px;
+}
+.icon{
+  width: 16px;
+  height: 16px;
+}
 h1 {
   font-family: serif;
   color: #377ba8;
